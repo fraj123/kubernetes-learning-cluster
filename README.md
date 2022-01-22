@@ -18,11 +18,15 @@ terraform apply
 ```
 ### Go to master node and check cp.out file
 ```
+cat ~/cp.out
+```
+### Copy something similar to this:
+```
 sudo kubeadm join --token 118c3e.83b49999dc5dc034 \
 10.128.0.3:6443 --discovery-token-ca-cert-hash \
 sha256:40aa946e3f53e38271bae24723866f56c86d77efb49aedeb8a70cc189bfe2e1d
 ```
-Copy and paste to worker nodes
+Copy and paste in worker nodes
 ### Verify the cluster
 ```
 ubuntu@ip-172-31-71-88:~$ kubectl get node
