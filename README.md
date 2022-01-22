@@ -3,7 +3,11 @@
 ```
 terraform init
 ```
-### Fill the terraform.tfvars.example with your AWS values
+### Change and fill terraform.tfvars_copy with your AWS values
+```
+mv terraform.tfvars_copy terraform.tfvars
+vim terraform.tfvars
+```
 ### Verify terraform files
 ```
 terraform plan
